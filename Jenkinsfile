@@ -18,7 +18,7 @@ pipeline {
         stage('Build & Package') {
             steps {
                 sh 'mvn clean package'          // creates target/*.war , also note Sh is fr linux and bat is for Windows
-				sh 'dir target\\*.war'
+				sh 'mkdir target\\*.war'
             }
         }
 
