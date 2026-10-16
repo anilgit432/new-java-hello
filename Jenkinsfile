@@ -26,7 +26,7 @@ pipeline {
             steps {
                 // Simple copy: Jenkins and Tomcat on the SAME machine.
                 // Tomcat auto-deploys any WAR dropped into webapps/.
-                sh 'cp target/*.war /opt/homebrew/Cellar/tomcat@9/9.0.122/libexec/webapps/
+                sh 'cp target/*.war /opt/homebrew/Cellar/tomcat@9/9.0.122/libexec/webapps/'
             }
         }
     }
